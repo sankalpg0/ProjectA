@@ -84,5 +84,3 @@ Use version control to track changes to your Terraform configurations.
 Test configurations in a non-production environment before applying them in production.
 
 Secure sensitive data, such as access keys, using tools like AWS Secrets Manager or Terraform Cloud.
-
-License
