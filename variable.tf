@@ -27,3 +27,39 @@ variable "db_password" {
   type        = string
   default     = "password123"
 }
+
+variable "eks_cluster_name" {
+  description = "The name of the EKS cluster."
+  type        = string
+  default     = "my-eks-cluster"
+}
+
+variable "eks_node_group_name" {
+  description = "The name of the EKS node group."
+  type        = string
+  default     = "my-eks-node-group"
+}
+
+variable "eks_node_instance_type" {
+  description = "The instance type for the EKS nodes."
+  type        = string
+  default     = "t3.medium"
+}
+
+variable "eks_node_group_desired_capacity" {
+  description = "The desired capacity of the EKS node group."
+  type        = number
+  default     = 2
+}
+
+variable "eks_node_group_max_capacity" {
+  description = "The maximum capacity of the EKS node group."
+  type        = number
+  default     = 3
+}
+
+variable "eks_node_group_min_capacity" {
+  description = "The minimum capacity of the EKS node group."
+  type        = number
+  default     = 1
+}
